@@ -5,7 +5,6 @@ const { User } = require('../../src/app/models');
 const truncate = require('../utils/truncate');
 
 describe('Authentic.ation', () => {
-
     beforeEach(async () => {
         await truncate();
     });
@@ -14,9 +13,29 @@ describe('Authentic.ation', () => {
         const user = await User.create({ name: 'Gabriel', email: 'gabriel_hahn@hotmail.com', password: '123123' });
         const response = await request(app).post('/sessions').send({
             email: user.email,
-            password: '123456'
+            password: '123123'
         });
 
         expect(response.status).toBe(200);
+    });
+
+    it('Should not authenticate with invalid credentials', async () => {
+        const user = await User.create({ name: 'Gabriel', email: 'gabriel_hahn@hotmail.com', password: '123123' });
+        const response = await request(app).post('/sessions').send({
+            email: user.email,
+            password: '123456'
+        });
+
+        expect(response.status).toBe(401);
+    });
+
+    it ('Should return JWT token when authenticated', async () => {
+        const user = await User.create({ name: 'Gabriel', email: 'gabriel_hahn@hotmail.com', password: '123123' });
+        const response = await request(app).post('/sessions').send({
+            email: user.email,
+            password: '123123'
+        });
+
+        expect(response.body).toHaveProperty('token');
     });
 });
