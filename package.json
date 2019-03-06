@@ -1,0 +1,23 @@
+{
+  "name": "user-auth-jwt",
+  "version": "1.0.0",
+  "description": "JWT User Authentication API - NodeJS :busts_in_silhouette:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriel-hahn/user-auth-jwt.git"
+  },
+  "keywords": [],
+  "author": "Gabriel Hahn Schaeffer <gabriel_hahn@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabriel-hahn/user-auth-jwt/issues"
+  },
+  "homepage": "https://github.com/gabriel-hahn/user-auth-jwt#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
