@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/gabriel-hahn/user-auth-jwt#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "pg": "^7.8.1",
+    "sequelize": "^4.43.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^5.4.0"
   }
 }
