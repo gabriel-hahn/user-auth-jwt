@@ -1,5 +1,7 @@
 # User auth jwt
 
+[![BCH compliance](https://bettercodehub.com/edge/badge/gabriel-hahn/user-auth-jwt?branch=master)](https://bettercodehub.com/)
+
 JWT User Authentication API - NodeJS :busts_in_silhouette:
 
 ## Getting Starter
