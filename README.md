@@ -4,7 +4,7 @@
 
 JWT User Authentication API - NodeJS :busts_in_silhouette:
 
-## Getting Starter
+## Getting Started
 
 Install all dependencies. You must have [yarn](https://yarnpkg.com/en/) installed.
 
